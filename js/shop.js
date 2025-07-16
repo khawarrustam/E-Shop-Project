@@ -71,15 +71,14 @@ function getFooterHTML() {
         <a href="login.html">Login</a>
         <a href="signup.html">Sign Up</a>
       </div>
-      <div class="footer__contact">
-        <span>Contact: info@eshop.com</span>
-        <span>Phone: +1 234 567 890</span>
-      </div>
-      <div class="footer__social">
-        <a href="#" aria-label="Instagram">&#x1F4F7;</a>
-        <a href="#" aria-label="Twitter">&#x1F426;</a>
-        <a href="#" aria-label="Facebook">&#x1F4F1;</a>
-      </div>
+          <div class="footer__contact">
+      <span>Contact: rajputkhawarali@gmail.com</span>
+      <span>Phone: +1 234 567 890</span>
+    </div>
+          <div class="footer__social">
+      <a href="https://linkedin.com/in/khawarrustam" aria-label="LinkedIn" target="_blank">🔗</a>
+      <a href="https://github.com/khawarrustam" aria-label="GitHub" target="_blank">📚</a>
+    </div>
       <div class="footer__copyright">
         &copy; 2024 E-Shop. All rights reserved.
       </div>
@@ -194,18 +193,15 @@ function renderFooter() {
       </div>
       <div class="footer-contact">
         <strong>Contact</strong>
-        <span>Email: info@eshop.com</span>
+        <span>Email: rajputkhawarali@gmail.com</span>
         <span>Phone: +1 234 567 890</span>
       </div>
       <div class="footer-social">
-        <a href="#" aria-label="Instagram" title="Instagram">
-          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>
+        <a href="https://linkedin.com/in/khawarrustam" aria-label="LinkedIn" title="LinkedIn" target="_blank">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
         </a>
-        <a href="#" aria-label="Twitter" title="Twitter">
-          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.4 1.64a9.09 9.09 0 0 1-2.88 1.1A4.52 4.52 0 0 0 16.11 0c-2.5 0-4.52 2.02-4.52 4.52 0 .35.04.7.11 1.03C7.69 5.4 4.07 3.67 1.64 1.15c-.38.65-.6 1.4-.6 2.2 0 1.52.77 2.86 1.94 3.65A4.48 4.48 0 0 1 .96 6v.06c0 2.13 1.52 3.91 3.54 4.31-.37.1-.76.16-1.16.16-.28 0-.55-.03-.81-.08.55 1.72 2.16 2.97 4.07 3A9.05 9.05 0 0 1 0 19.54a12.8 12.8 0 0 0 6.92 2.03c8.3 0 12.85-6.88 12.85-12.85 0-.2 0-.39-.01-.58A9.22 9.22 0 0 0 24 4.59a9.1 9.1 0 0 1-2.6.71z"/></svg>
-        </a>
-        <a href="#" aria-label="Facebook" title="Facebook">
-          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a4 4 0 0 0-4 4v3H7v4h4v8h4v-8h3l1-4h-4V6a1 1 0 0 1 1-1h3z"/></svg>
+        <a href="https://github.com/khawarrustam" aria-label="GitHub" title="GitHub" target="_blank">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
         </a>
       </div>
     </div>
