@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header id="navbar"></header>
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg"></div>
+      <div class="hero-content container">
+        <div class="hero-tagline">Your Trusted Online Store</div>
+        <h1 class="hero-title">Discover the Best in Modern Shopping</h1>
+        <p class="hero-subtitle">Shop the latest trends in fashion, electronics, and more. Premium products, unbeatable prices.</p>
+        <div>
+          <a href="shop.html" class="hero-cta">Shop Now</a>
+          <a href="#featured-products" class="hero-secondary">Learn More</a>
+        </div>
+      </div>
+    </section>
+    <!-- FEATURED CATEGORIES -->
+    <section class="categories-section container">
+      <h2 class="categories-title">Shop by Category</h2>
+      <div class="categories-grid" id="categories-grid"></div>
+    </section>
+    <!-- FEATURED PRODUCTS -->
+    <section id="featured-products" class="featured-section container">
+      <h2 class="section-title">Featured Products</h2>
+      <div id="featured-list" class="product-grid"></div>
+    </section>
+  </main>
+  <!-- FOOTER -->
+  <footer id="footer"></footer>
+  <script src="js/main.js"></script>
+<script>
+// Category images mapped to API category names
+const categoryImages = {
+  "men's clothing": "assets/men.jpg",
+  "women's clothing": "assets/women.avif",
+  "electronics": "assets/electronics.avif",
+  "jewelery": "assets/Jewellery.png"
+};
+
+// Render categories from API
+async function renderCategories() {
+  const grid = document.getElementById('categories-grid');
+  if (!grid) return;
+  try {
+    const res = await fetch('https://fakestoreapi.com/products/categories');
+    const categories = await res.json();
+    grid.innerHTML = categories.map((cat, i) => `
+      <a class="category-card" data-category="${cat}" href="shop.html?category=${encodeURIComponent(cat)}"
+         style="background-image:url('${categoryImages[cat] || categoryImages['electronics']}'); animation-delay:${0.1 + i * 0.1}s">
+        <div class="category-card__overlay">
+          <span class="category-card__name">${cat.charAt(0).toUpperCase() + cat.slice(1)}
+            <span class="category-card__arrow">→</span>
+          </span>
+        </div>
+      </a>
+    `).join('');
+  } catch (err) {
+    grid.innerHTML = '<div style="color:var(--primary);text-align:center;">Failed to load categories.</div>';
+  }
+}
+
+document.addEventListener('DOMContentLoaded', renderCategories);
+</script>
+</body>
+</html> 
