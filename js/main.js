@@ -80,7 +80,7 @@ const footerHTML = `
       <a href="https://github.com/khawarrustam" aria-label="GitHub" target="_blank">📚</a>
     </div>
     <div class="footer__copyright">
-      &copy; 2024 E-Shop. All rights reserved.
+      &copy; 2025 Tiers Limited internship E-Shop. All rights reserved.
     </div>
   </div>
 `;
@@ -294,7 +294,7 @@ function renderFooter() {
         </a>
       </div>
     </div>
-    <div class="footer-copyright">&copy; 2024 E-Shop. All rights reserved.</div>
+    <div class="footer-copyright">&copy; 2025 Tiers Limited internship E-Shop. All rights reserved.</div>
   `;
 }
 

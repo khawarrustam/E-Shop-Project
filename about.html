@@ -5,63 +5,267 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>E-Commerce | About Us</title>
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header id="navbar"></header>
+  
   <main>
-    <section id="about-content" class="about-section container">
-      <div class="about-img">
-        <img src="https://www.glossy.co/wp-content/uploads/sites/4/2024/09/DSC02437.jpg?w=1140&h=600&crop=1" alt="About E-Shop" />
+    <!-- HERO SECTION -->
+    <section class="about-hero">
+      <div class="about-hero__overlay"></div>
+      <div class="about-hero__content container">
+        <h1 class="about-hero__title fade-in">About E-Shop</h1>
+        <p class="about-hero__subtitle fade-in">Your Trusted Partner in Modern Shopping</p>
+        <div class="about-hero__stats fade-in">
+          <div class="stat-item">
+            <span class="stat-number">10K+</span>
+            <span class="stat-label">Happy Customers</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">Premium Products</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">Support</span>
+          </div>
+        </div>
       </div>
-      <div class="about-info">
-        <h1>About E-Shop</h1>
-        <p>
-          E-Shop is your one-stop destination for the latest trends in fashion, electronics, and more. Our mission is to provide a seamless and enjoyable shopping experience, offering high-quality products at competitive prices. We believe in customer satisfaction, fast delivery, and a modern, secure online store.
-        </p>
-        <p>
-          Whether you're looking for the newest gadgets or the latest fashion, E-Shop has you covered. Thank you for choosing us!
-        </p>
+    </section>
+
+    <!-- COMPANY OVERVIEW -->
+    <section class="company-overview container">
+      <div class="company-overview__content">
+        <div class="company-overview__text">
+          <h2 class="section-title scroll-fade">Our Story</h2>
+          <p class="company-overview__description scroll-fade">
+            Founded in 2025, E-Shop emerged from a vision to revolutionize online shopping. 
+            We started as a small team passionate about creating seamless digital experiences 
+            that connect customers with premium products at unbeatable prices.
+          </p>
+          <p class="company-overview__description scroll-fade">
+            Today, we've grown into a trusted platform serving thousands of customers worldwide, 
+            offering everything from cutting-edge electronics to the latest fashion trends. 
+            Our commitment to quality, innovation, and customer satisfaction remains at the 
+            heart of everything we do.
+          </p>
+          <div class="company-overview__features scroll-fade">
+            <div class="feature-item">
+              <div class="feature-icon">🚀</div>
+              <span>Fast Delivery</span>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🛡️</div>
+              <span>Secure Shopping</span>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">💎</div>
+              <span>Premium Quality</span>
+            </div>
+          </div>
+        </div>
+        <div class="company-overview__image scroll-fade">
+          <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80" alt="Our Story" />
+          <div class="image-overlay">
+            <div class="overlay-content">
+              <span class="overlay-number">2025</span>
+              <span class="overlay-text">Founded</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MISSION & VISION -->
+    <section class="mission-vision container">
+      <h2 class="section-title text-center scroll-fade">Our Mission & Vision</h2>
+      <div class="mission-vision__cards">
+        <div class="mission-card scroll-fade">
+          <div class="mission-card__icon">
+            <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3>Our Mission</h3>
+          <p>To provide seamless, secure, and enjoyable online shopping experiences while offering the highest quality products at competitive prices.</p>
+          <div class="card-highlight">
+            <span>Quality First</span>
+          </div>
+        </div>
+        <div class="vision-card scroll-fade">
+          <div class="vision-card__icon">
+            <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 12l2 2 4-4"/>
+              <path d="M21 12c-1 0-2.4-.4-3.5-1.5-2.2-2.2-2.2-5.8 0-8s5.8-2.2 8 0 2.2 5.8 0 8c-1.1 1.1-2.5 1.5-3.5 1.5z"/>
+            </svg>
+          </div>
+          <h3>Our Vision</h3>
+          <p>To become the leading e-commerce platform that sets industry standards for customer experience, innovation, and sustainable business practices.</p>
+          <div class="card-highlight">
+            <span>Innovation Driven</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE VALUES -->
+    <section class="core-values container">
+      <h2 class="section-title text-center scroll-fade">What We Believe</h2>
+      <div class="values-grid">
+        <div class="value-card scroll-fade">
+          <div class="value-card__icon">
+            <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/>
+              <line x1="16" y1="8" x2="2" y2="22"/>
+              <line x1="17.5" y1="15" x2="9" y2="15"/>
+            </svg>
+          </div>
+          <h3>Innovation</h3>
+          <p>Constantly pushing boundaries to deliver cutting-edge solutions and experiences that exceed customer expectations.</p>
+          <div class="value-badge">Future Ready</div>
+        </div>
+        <div class="value-card scroll-fade">
+          <div class="value-card__icon">
+            <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3>Trust</h3>
+          <p>Building lasting relationships through transparency, reliability, and exceptional service that customers can depend on.</p>
+          <div class="value-badge">Reliable</div>
+        </div>
+        <div class="value-card scroll-fade">
+          <div class="value-card__icon">
+            <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+          </div>
+          <h3>Excellence</h3>
+          <p>Striving for perfection in every product, service, and customer interaction to deliver outstanding experiences.</p>
+          <div class="value-badge">Premium</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="why-choose-us container">
+      <h2 class="section-title text-center scroll-fade">Why Choose E-Shop?</h2>
+      <p class="section-subtitle text-center scroll-fade">Experience shopping like never before with our premium features</p>
+      <div class="features-grid">
+        <div class="feature-card scroll-fade">
+          <div class="feature-card__icon">
+            <svg width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <path d="M9 9h6v6H9z"/>
+              <path d="M3 9h6"/>
+              <path d="M15 9h6"/>
+              <path d="M3 15h6"/>
+              <path d="M15 15"/>
+            </svg>
+          </div>
+          <h3>Curated Collections</h3>
+          <p>Handpicked products from top brands, ensuring you get the best quality and latest trends in every category.</p>
+          <div class="feature-highlight">
+            <span>500+ Premium Items</span>
+          </div>
+        </div>
+        <div class="feature-card scroll-fade">
+          <div class="feature-card__icon">
+            <svg width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8V5l-8-3-8 3v7z"/>
+              <path d="M9 12l2 24"/>
+            </svg>
+          </div>
+          <h3>Secure Shopping</h3>
+          <p>Bank-level encryption and secure payment gateways protect your data and transactions at every step.</p>
+          <div class="feature-highlight">
+            <span>100% Safe</span>
+          </div>
+        </div>
+        <div class="feature-card scroll-fade">
+          <div class="feature-card__icon">
+            <svg width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M122L2 7l10 510-510-5zM2 17l105 1025"/>
+              <path d="M22 12h-4l-3"/>
+            </svg>
+          </div>
+          <h3>Lightning Fast</h3>
+          <p>Same-day processing and express delivery options get your orders to your doorstep in record time.</p>
+          <div class="feature-highlight">
+            <span>24hr Delivery</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="about-cta">
+      <div class="about-cta__overlay"></div>
+      <div class="about-cta__content container">
+        <h2 class="about-cta__title scroll-fade">Ready to Start Shopping?</h2>
+        <p class="about-cta__subtitle scroll-fade">Join thousands of satisfied customers and discover amazing products at unbeatable prices</p>
+        <div class="about-cta__buttons scroll-fade">
+          <a href="shop.html" class="about-cta__button primary">Shop Now</a>
+          <a href="index.html" class="about-cta__button secondary">Learn More</a>
+        </div>
       </div>
     </section>
   </main>
+
   <footer id="footer"></footer>
+  
   <script src="js/main.js"></script>
   <script>
-    function renderFooter() {
-      const footer = document.getElementById('footer');
-      if (!footer) return;
-      footer.innerHTML = `
-        <div class="footer-content container">
-          <div>
-            <div class="footer-logo">E-Shop</div>
-            <div class="footer-desc">Premium products, unbeatable prices. Your one-stop shop for fashion, electronics, and more.</div>
-          </div>
-          <div class="footer-links">
-            <strong>Quick Links</strong>
-            <a href="index.html">Home</a>
-            <a href="shop.html">Shop</a>
-            <a href="about.html">About</a>
-            <a href="#">Contact</a>
-          </div>
-          <div class="footer-contact">
-            <strong>Contact</strong>
-            <span>Email: rajputkhawarali@gmail.com</span>
-            <span>Phone: +1 234 567 890</span>
-          </div>
-          <div class="footer-social">
-            <a href="https://linkedin.com/in/khawarrustam" aria-label="LinkedIn" title="LinkedIn" target="_blank">
-              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-            </a>
-            <a href="https://github.com/khawarrustam" aria-label="GitHub" title="GitHub" target="_blank">
-              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-            </a>
-          </div>
-        </div>
-        <div class="footer-copyright">&copy; 2024 E-Shop. All rights reserved.</div>
-      `;
-    }
-    document.addEventListener('DOMContentLoaded', renderFooter);
+    // About page specific animations
+    document.addEventListener('DOMContentLoaded', function() {
+      // Fade in hero elements
+      const heroElements = document.querySelectorAll('.fade-in');
+      heroElements.forEach((el, index) => {
+        setTimeout(() => {
+          el.style.opacity = '1';
+          el.style.transform = 'translateY(0)';
+        }, 200 + index * 200);
+      });
+
+      // Scroll animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-in');
+          }
+        });
+      }, observerOptions);
+
+      // Observe all scroll-fade elements
+      document.querySelectorAll('.scroll-fade').forEach(el => {
+        observer.observe(el);
+      });
+
+      // Animate stats numbers
+      const statNumbers = document.querySelectorAll('.stat-number');
+      statNumbers.forEach(stat => {
+        const target = parseInt(stat.textContent);
+        let current = 0;
+        const increment = target / 50;
+        const timer = setInterval(() => {
+          current += increment;
+          if (current >= target) {
+            current = target;
+            clearInterval(timer);
+          }
+          stat.textContent = Math.floor(current) + (stat.textContent.includes('+') ? '+' : '');
+        }, 50);
+      });
+    });
   </script>
 </body>
 </html> 
